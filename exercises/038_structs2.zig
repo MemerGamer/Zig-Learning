@@ -39,11 +39,12 @@ pub fn main() void {
     //     gold       10
     //     health     100
     //     experience 20
-    //
+
+    chars[1] = Character{ .class = Class.bard, .gold = 10, .health = 100, .experience = 20 };
+
     // Feel free to run this program without adding Zump. What does
     // it do and why?
 
-    // Printing all RPG characters in a loop:
     for (chars, 0..) |c, num| {
         std.debug.print("Character {} - G:{} H:{} XP:{}\n", .{
             num + 1, c.gold, c.health, c.experience,
