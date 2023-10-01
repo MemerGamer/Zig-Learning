@@ -69,7 +69,7 @@ pub fn main() void {
     // Hey, we can't just pass this runtime variable as an
     // argument to the scaleMe() method. What would let us do
     // that?
-    var scale: u32 = undefined;
+    comptime var scale: u32 = undefined;
 
     scale = 32; // 1:32 scale
 
